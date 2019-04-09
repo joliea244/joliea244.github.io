@@ -308,6 +308,7 @@
 
 
 <script>
+	function submit() {
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxeis8gCL1osGorrfIcqAqKWBEA3XpliX2xxuHWShXF5Isn7yfp/exec'
   const form = document.forms['submit-to-google-sheet']
 
@@ -318,4 +319,7 @@
       .catch(error => console.error('Error!', error.message))
 	document.submit-to-google-sheet.reset();
   })
+ document.getElementById("myForm").reset();
+}
+ 
 </script>
