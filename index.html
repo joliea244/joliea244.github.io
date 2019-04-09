@@ -173,7 +173,7 @@
 
     <!-- Field type: "grid" id: "590959919" -->
     <fieldset>
-        <legend align="center" for="590959919"><b>How you will rate this product? <br>(1 being Very Dissatisfied and 5 being Very Satisfied)</b></legend>
+        <legend align="center" for="590959919"><b>How will you rate this product? <br>(1 being Very Dissatisfied and 5 being Very Satisfied)</b></legend>
        <table> <div class="form-group">
             <div>
 		    <tr height="40px" ><td width="70px"><span>Price: </span></td>
@@ -298,7 +298,7 @@
 <fieldset>
 	<legend align="center" ><b>Comments, if any</b></legend>
 <div align="center">
-<input style="height: 45px; width=200px" align="center" type="text" name="comment"  >
+<input style="height: 45px; width=300px" align="center" type="text" name="comment"  >
 </div>
 </fieldset>
 <br>
@@ -308,7 +308,7 @@
 
 
 <script>
-	function submit() {
+
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxeis8gCL1osGorrfIcqAqKWBEA3XpliX2xxuHWShXF5Isn7yfp/exec'
   const form = document.forms['submit-to-google-sheet']
 
@@ -317,9 +317,9 @@
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
+	  
+	   document.getElementById("submit-to-google-sheet").reset();
 	
   })
- document.getElementById("submit-to-google-sheet").reset();
-}
  
 </script>
