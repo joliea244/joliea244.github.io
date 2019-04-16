@@ -1,3 +1,13 @@
+<head>
+	<style>
+		
+.boxy label {display: block; padding: 5px; position: relative; padding-left: 20px;}
+.boxy label input {display: none;}
+.boxy label span {border: 1px solid #ccc; width: 15px; height: 15px; position: absolute; overflow: hidden; line-height: 1; text-align: center; border-radius: 100%; font-size: 10pt; left: 0; top: 50%; margin-top: -7.5px;}
+input:checked + span {background: #ccf; border-color: #ccf;}
+	</style>
+</head>
+
 <br>
 
 
@@ -190,14 +200,14 @@
     <fieldset>
         <legend align="center" for="590959919"><b>How will you rate this product? <br>(1 being Very Dissatisfied and 5 being Very Satisfied)</b></legend>
        <br><table align="center"> <div class="form-group">
-            <div>
+            <div class="boxy">
 		    
 		    <tr align="center" height="30px" ><td colspan="5"><font size="4px"><b><u>Price</u></b></font> </td></tr>
 		    
-               <tr> <td><label class="radio-inline">
-		        <font size="4px"> 1 </font>
+               <tr > <td><label>
+		        
                     <input style="height: 20px; width:20px" type="radio" name="rating_price" value="1" >
-		      
+		       <font size="4px"> <span>1 </span></font>
 		       </label></td>
                <td> <label class="radio-inline">
                     <input style="height: 20px; width:20px" type="radio" name="rating_price" value="2" >
