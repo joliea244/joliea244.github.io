@@ -91,8 +91,8 @@
 		<table style="vertical-align: middle;">
             <div>
                <tr height="35px"> <td>
-                    <input style="height: 20px; width:20px" type="checkbox" name="r_mind" value="I changed my mind" ></td>
-                  <td><font size="4px">  I changed my mind</font>
+                    <input style="height: 20px; width:20px" type="checkbox" name="r_mind" id="123" value="I changed my mind" ></td>
+		       <td><font size="4px"> <label for="123"> I changed my mind</label></font>
 		       </td></tr>
             </div>
             <div class="radio">
@@ -201,15 +201,15 @@
 		       </label></td>
                <td> <label class="radio-inline">
                     <input style="height: 20px; width:20px" type="radio" name="rating_price" value="2" >
-                   
+                   <font size="4px"> 2 </font>
 		       </label></td>
                 <td><label class="radio-inline">
                     <input style="height: 20px; width:20px" type="radio" name="rating_price" value="3" >
-                    
+                    <font size="4px"> 3 </font>
 			</label></td>
                 <td><label class="radio-inline">
                     <input style="height: 20px; width:20px" type="radio" name="rating_price" value="4" >
-                    
+                    <font size="4px"> 4 </font>
 			</label></td>
                <td> <label class="radio-inline">
                     <input style="height: 20px; width:20px" type="radio" name="rating_price" value="5" >
@@ -324,13 +324,7 @@
 </div>
 </fieldset>
 		
-		label {display: block; padding: 5px; position: relative; padding-left: 20px;}
-label input {display: none;}
-label span {border: 1px solid #ccc; width: 15px; height: 15px; position: absolute; overflow: hidden; line-height: 1; text-align: center; border-radius: 100%; font-size: 10pt; left: 0; top: 50%; margin-top: -7.5px;}
-input:checked + span {background: #ccf; border-color: #ccf;}
-<h3>Select One</h3>
-<label><input type="radio" name="select" /><span>a</span> Item 1</label>
-<label><input type="radio" name="select" /><span>b</span> Item 2</label>
+		
 <br>
 		
 <button style="font-size:20px" type="submit">Submit</button>
